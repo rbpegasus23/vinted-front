@@ -1,0 +1,373 @@
+/* :root {
+  --desaturate-cyan: red;
+  --box-shadow-card: 8px 8px 32px var(--desaturate-cyan);
+} */
+
+#root {
+  max-width: 1280px;
+  min-height: 1080px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+header {
+  /* background-color: red; */
+  width: 1260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid #f2f2f2 1px;
+  border-bottom: solid #f2f2f2 1px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: start;
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 50px;
+}
+
+header img {
+  height: 1.5vmax;
+}
+
+.downloading {
+  font-weight: bold;
+  color: #00757f;
+}
+
+.searchBar {
+  position: relative;
+  background-color: #f2f2f2;
+  /* border: solid black 1px; */
+  width: 590px;
+  height: 36px;
+}
+
+.searchBar i {
+  position: absolute;
+  top: 10px;
+  cursor: pointer;
+}
+
+.searchBar input {
+  background-color: #f2f2f2;
+  margin-left: 30px;
+  width: 550px;
+  height: 32px;
+  outline: none;
+  border: none;
+}
+
+.divButtonsOfHeader button {
+  height: 32px;
+  text-align: center;
+  line-height: 0;
+  border-radius: 0;
+  border: solid #00757f 1px;
+}
+
+.divButtonsOfHeader button:hover {
+  opacity: 0.8;
+}
+
+.divButtonsOfHeader > a:not(:last-child) button {
+  background-color: white;
+  color: #00757f;
+}
+
+.divButtonsOfHeader > a:last-child button {
+  color: white;
+  background-color: #00757f;
+}
+
+.divButtonsOfHeader {
+  margin-left: 25px;
+  display: flex;
+  gap: 10px;
+}
+.banner {
+  width: 1260px;
+  height: 615px;
+  object-fit: cover;
+  margin-bottom: 50px;
+}
+.container-products {
+  display: flex;
+  /* background-color: red; */
+  flex-wrap: wrap;
+  gap: 22px;
+  width: 1280px;
+}
+
+.produit {
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+}
+
+.produit a > img {
+  height: 360px;
+  width: 235px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.produit > div:first-child {
+  /* background-color: yellow; */
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  line-height: 0;
+  margin-bottom: 10px;
+}
+
+.produit > div:first-child img {
+  border-radius: 50%;
+  height: 2vmax;
+}
+
+.produit > div:first-child p {
+  font-size: 12px;
+}
+
+.produit > div:last-child {
+  display: flex;
+  flex-direction: column;
+  line-height: 0;
+  text-align: start;
+}
+.produit > div:last-child p:first-child {
+  font-weight: bold;
+}
+
+.produit a > div:last-child p:not(:first-child) {
+  color: gray;
+  font-size: 12px;
+}
+
+.container-offer {
+  display: flex;
+  gap: 280px;
+}
+
+.container-offer img {
+  height: 605px;
+  width: 400px;
+  border: solid #00757f 1px;
+  object-fit: cover;
+  box-shadow: 4px 8px 32px grey;
+}
+
+.recapitulatif {
+  background-color: #f8f7f5;
+  width: 400px;
+  padding: 10px;
+  box-shadow: 4px 8px 32px grey;
+}
+
+.recapitulatif button:first-of-type {
+  background-color: #00757f;
+  border-radius: 5px;
+  width: 380px;
+  color: white;
+}
+
+.recapitulatif button:not(:first-of-type) {
+  background-color: white;
+  border: solid #00757f 1px;
+  width: 380px;
+  color: #00757f;
+}
+
+.buttons-recapitulatif {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 4px 8px 32px grey;
+}
+
+.formSignup > label:first-child,
+.formConnexion > label:first-child {
+  color: #00757f;
+  border: solid #00757f 1px;
+  padding: 10px;
+}
+
+.alertMessage {
+  color: red;
+  font-weight: bold;
+}
+
+.container-formPublish form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 4px 8px 32px #00757f;
+}
+
+.previewImageInForm {
+  height: 25vmax;
+  width: 25vmax;
+  object-fit: cover;
+}
+
+form label {
+  font-weight: bold;
+}
+
+#pickAFile {
+  padding: 10px;
+}
+
+#pickAFile input {
+  z-index: 0;
+  cursor: pointer;
+}
+
+#pickAFile button {
+  position: absolute;
+  border-radius: 0;
+  height: 45px;
+  width: 125px;
+  pointer-events: none;
+  font-size: 12px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#pickAFile {
+  /* background-color: red; */
+  position: relative;
+  height: 50px;
+}
+
+form button {
+  background-color: #00757f;
+  color: white;
+  width: 100px;
+}
+
+.tarif {
+  border-bottom: solid rgb(228, 225, 225) 1px;
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+.tarif p {
+  font-size: 24px;
+}
+
+.container-info {
+  display: flex;
+  gap: 25px;
+  border-bottom: solid rgb(228, 225, 225) 1px;
+  margin-bottom: 10px;
+}
+
+.container-info > div {
+  /* background-color: red; */
+  text-align: start;
+}
+
+.container-info > div:nth-of-type(2) p:first-child {
+  color: #00757f;
+}
+
+.container-info > div:first-child p {
+  font-weight: bold;
+  color: grey;
+}
+
+.container-info > div:last-child p {
+  font-weight: 500;
+}
+
+.descriptif {
+  /* background-color: red; */
+  border-bottom: solid rgb(228, 225, 225) 1px;
+  margin-bottom: 10px;
+  text-align: start;
+  margin-top: 50px;
+}
+
+.descriptif > p:first-child {
+  font-weight: 500;
+}
+
+#formCheckout {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+#formCheckout > div:nth-of-type(2) {
+  display: flex;
+  width: 40rem;
+  /* background-color: yellow; */
+  justify-content: space-between;
+}
+
+#formCheckout > div:nth-of-type(2) p {
+  font-weight: bold;
+}
+
+#formCheckout > div:nth-of-type(3) {
+  width: 40rem;
+  /* background-color: red; */
+  border-bottom: solid rgb(228, 225, 225) 1px;
+  padding-bottom: 20px;
+}
+
+#formCheckout > div:nth-of-type(3) p {
+  font-weight: 500;
+  text-align: start;
+}
+
+#formCheckout span {
+  font-weight: bold;
+}
+
+#formCheckout button {
+  background-color: #02c06d;
+  width: 40rem;
+  color: white;
+}
+
+.detailsCheckout {
+  border-bottom: solid rgb(228, 225, 225) 1px;
+  padding: 20px;
+}
+
+.detailsCheckout > div {
+  display: flex;
+  width: 40rem;
+  /* background-color: yellow; */
+  justify-content: space-between;
+}
+
+.detailsCheckout > div p {
+  color: gray;
+}
+
+.StripeElement {
+  /* background-color: red; */
+  padding-bottom: 20px;
+  border-bottom: solid rgb(228, 225, 225) 1px;
+  width: 40rem;
+}
